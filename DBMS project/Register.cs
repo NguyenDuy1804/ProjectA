@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace DBMS_project
 {
-    public partial class Form_Login : Form
+    public partial class Register : Form
     {
-        public Form_Login()
+        public Register()
         {
             InitializeComponent();
         }
 
-        private void textBox_ID_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
