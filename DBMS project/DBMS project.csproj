@@ -68,6 +68,24 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Booking.Designer.cs">
+      <DependentUpon>Form_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Employee.Designer.cs">
+      <DependentUpon>Form_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Movie.Designer.cs">
+      <DependentUpon>Form_Movie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +102,15 @@
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Booking.resx">
+      <DependentUpon>Form_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Employee.resx">
+      <DependentUpon>Form_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Movie.resx">
+      <DependentUpon>Form_Movie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

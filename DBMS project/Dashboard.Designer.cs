@@ -29,12 +29,12 @@ namespace DBMS_project
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel_RightDB = new System.Windows.Forms.Panel();
             this.label_Dashboard = new System.Windows.Forms.Label();
             this.panel_Top = new System.Windows.Forms.Panel();
@@ -104,38 +104,38 @@ namespace DBMS_project
             // chart_Movie
             // 
             this.chart_Movie.BackColor = System.Drawing.SystemColors.Window;
-            chartArea9.Name = "ChartArea1";
-            this.chart_Movie.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart_Movie.Legends.Add(legend9);
+            chartArea11.Name = "ChartArea1";
+            this.chart_Movie.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chart_Movie.Legends.Add(legend11);
             this.chart_Movie.Location = new System.Drawing.Point(1014, 227);
             this.chart_Movie.Name = "chart_Movie";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart_Movie.Series.Add(series9);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chart_Movie.Series.Add(series11);
             this.chart_Movie.Size = new System.Drawing.Size(374, 512);
             this.chart_Movie.TabIndex = 7;
             this.chart_Movie.Text = "chart1";
             // 
             // chart_Revenue
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart_Revenue.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart_Revenue.Legends.Add(legend10);
+            chartArea12.Name = "ChartArea1";
+            this.chart_Revenue.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chart_Revenue.Legends.Add(legend12);
             this.chart_Revenue.Location = new System.Drawing.Point(258, 227);
             this.chart_Revenue.Name = "chart_Revenue";
             this.chart_Revenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series10.ChartArea = "ChartArea1";
-            series10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            series10.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series10.ShadowOffset = 4;
-            this.chart_Revenue.Series.Add(series10);
+            series12.ChartArea = "ChartArea1";
+            series12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            series12.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series12.ShadowOffset = 4;
+            this.chart_Revenue.Series.Add(series12);
             this.chart_Revenue.Size = new System.Drawing.Size(736, 512);
             this.chart_Revenue.TabIndex = 6;
             this.chart_Revenue.Text = "Revenue";
