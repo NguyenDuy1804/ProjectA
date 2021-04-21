@@ -73,7 +73,7 @@ Producer nvarchar(256),
 TotalTime Time,
 
 TypeMovie nvarchar(256) ,
-EvaluteStar int,
+EvaluteStar float,
 
 constraint fk_TypeMovie_TypeMovie FOREIGN KEY(TypeMovie) REFERENCES TYPEOFMOVIE(TypeID)
 
