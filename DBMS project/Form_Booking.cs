@@ -16,5 +16,25 @@ namespace DBMS_project
         {
             InitializeComponent();
         }
+
+        private void pictureBox_Avata_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Room1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_Room1_MouseHover(object sender, EventArgs e)
+        {
+            button_Room1.ForeColor = Color.White;
+        }
+
+        private void panel_Fill_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

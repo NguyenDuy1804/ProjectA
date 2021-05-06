@@ -68,6 +68,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Bill.Designer.cs">
+      <DependentUpon>Form_Bill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Booking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Bill.resx">
+      <DependentUpon>Form_Bill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Booking.resx">
       <DependentUpon>Form_Booking.cs</DependentUpon>
