@@ -1,7 +1,7 @@
 ﻿
 namespace DBMS_project
 {
-    partial class Dashboard
+    partial class EDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -40,12 +40,10 @@ namespace DBMS_project
             this.pnBt_Booking = new System.Windows.Forms.Panel();
             this.pnBt_Dashboard = new System.Windows.Forms.Panel();
             this.pnBt_Movie = new System.Windows.Forms.Panel();
-            this.bt_Bill = new System.Windows.Forms.Button();
             this.bt_Booking = new System.Windows.Forms.Button();
             this.btDashboard = new System.Windows.Forms.Button();
             this.bt_Movie = new System.Windows.Forms.Button();
             this.pnBt_Employee = new System.Windows.Forms.Panel();
-            this.btEmployee = new System.Windows.Forms.Button();
             this.label_Dashboard = new System.Windows.Forms.Label();
             this.panel_Top = new System.Windows.Forms.Panel();
             this.chart_Movie = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -67,12 +65,10 @@ namespace DBMS_project
             this.panel_RightDB.Controls.Add(this.pnBt_Booking);
             this.panel_RightDB.Controls.Add(this.pnBt_Dashboard);
             this.panel_RightDB.Controls.Add(this.pnBt_Movie);
-            this.panel_RightDB.Controls.Add(this.bt_Bill);
             this.panel_RightDB.Controls.Add(this.bt_Booking);
             this.panel_RightDB.Controls.Add(this.btDashboard);
             this.panel_RightDB.Controls.Add(this.bt_Movie);
             this.panel_RightDB.Controls.Add(this.pnBt_Employee);
-            this.panel_RightDB.Controls.Add(this.btEmployee);
             this.panel_RightDB.Controls.Add(this.label_Dashboard);
             this.panel_RightDB.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_RightDB.Location = new System.Drawing.Point(0, 0);
@@ -120,23 +116,6 @@ namespace DBMS_project
             this.pnBt_Movie.Size = new System.Drawing.Size(8, 76);
             this.pnBt_Movie.TabIndex = 10;
             this.pnBt_Movie.Visible = false;
-            // 
-            // bt_Bill
-            // 
-            this.bt_Bill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.bt_Bill.FlatAppearance.BorderSize = 0;
-            this.bt_Bill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.bt_Bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Bill.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Bill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.bt_Bill.Location = new System.Drawing.Point(0, 608);
-            this.bt_Bill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.bt_Bill.Name = "bt_Bill";
-            this.bt_Bill.Size = new System.Drawing.Size(268, 76);
-            this.bt_Bill.TabIndex = 9;
-            this.bt_Bill.Text = "Bill";
-            this.bt_Bill.UseVisualStyleBackColor = false;
-            this.bt_Bill.Click += new System.EventHandler(this.bt_Bill_Click);
             // 
             // bt_Booking
             // 
@@ -198,23 +177,6 @@ namespace DBMS_project
             this.pnBt_Employee.Size = new System.Drawing.Size(8, 76);
             this.pnBt_Employee.TabIndex = 2;
             this.pnBt_Employee.Visible = false;
-            // 
-            // btEmployee
-            // 
-            this.btEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.btEmployee.FlatAppearance.BorderSize = 0;
-            this.btEmployee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.btEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEmployee.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btEmployee.Location = new System.Drawing.Point(0, 272);
-            this.btEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btEmployee.Name = "btEmployee";
-            this.btEmployee.Size = new System.Drawing.Size(263, 76);
-            this.btEmployee.TabIndex = 1;
-            this.btEmployee.Text = "Employee";
-            this.btEmployee.UseVisualStyleBackColor = false;
-            this.btEmployee.Click += new System.EventHandler(this.btEmployee_Click);
             // 
             // label_Dashboard
             // 
@@ -315,7 +277,7 @@ namespace DBMS_project
             this.label_RPDB.Text = "Dashboard";
             this.label_RPDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Dashboard
+            // EDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -329,7 +291,7 @@ namespace DBMS_project
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Dashboard";
+            this.Name = "EDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
@@ -347,13 +309,11 @@ namespace DBMS_project
         private System.Windows.Forms.Label label_Dashboard;
         private System.Windows.Forms.Panel panel_Top;
         private System.Windows.Forms.Panel pnBt_Employee;
-        private System.Windows.Forms.Button btEmployee;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Movie;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Revenue;
         private System.Windows.Forms.Panel panel_Report;
         private System.Windows.Forms.Button button_CreateRP;
         private System.Windows.Forms.Label label_RPDB;
-        private System.Windows.Forms.Button bt_Bill;
         private System.Windows.Forms.Button bt_Booking;
         private System.Windows.Forms.Button btDashboard;
         private System.Windows.Forms.Button bt_Movie;
