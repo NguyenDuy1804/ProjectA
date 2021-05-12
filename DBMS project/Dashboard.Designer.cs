@@ -29,12 +29,12 @@ namespace DBMS_project
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel_RightDB = new System.Windows.Forms.Panel();
             this.pnBT_Bill = new System.Windows.Forms.Panel();
             this.pnBt_Booking = new System.Windows.Forms.Panel();
@@ -76,48 +76,48 @@ namespace DBMS_project
             this.panel_RightDB.Controls.Add(this.label_Dashboard);
             this.panel_RightDB.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_RightDB.Location = new System.Drawing.Point(0, 0);
-            this.panel_RightDB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_RightDB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel_RightDB.Name = "panel_RightDB";
-            this.panel_RightDB.Size = new System.Drawing.Size(269, 990);
+            this.panel_RightDB.Size = new System.Drawing.Size(180, 482);
             this.panel_RightDB.TabIndex = 0;
             // 
             // pnBT_Bill
             // 
             this.pnBT_Bill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.pnBT_Bill.Location = new System.Drawing.Point(-2, 608);
-            this.pnBT_Bill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBT_Bill.Location = new System.Drawing.Point(-1, 395);
+            this.pnBT_Bill.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnBT_Bill.Name = "pnBT_Bill";
-            this.pnBT_Bill.Size = new System.Drawing.Size(8, 76);
+            this.pnBT_Bill.Size = new System.Drawing.Size(5, 49);
             this.pnBT_Bill.TabIndex = 13;
             this.pnBT_Bill.Visible = false;
             // 
             // pnBt_Booking
             // 
             this.pnBt_Booking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.pnBt_Booking.Location = new System.Drawing.Point(-2, 524);
-            this.pnBt_Booking.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBt_Booking.Location = new System.Drawing.Point(-1, 341);
+            this.pnBt_Booking.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnBt_Booking.Name = "pnBt_Booking";
-            this.pnBt_Booking.Size = new System.Drawing.Size(8, 76);
+            this.pnBt_Booking.Size = new System.Drawing.Size(5, 49);
             this.pnBt_Booking.TabIndex = 12;
             this.pnBt_Booking.Visible = false;
             // 
             // pnBt_Dashboard
             // 
             this.pnBt_Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.pnBt_Dashboard.Location = new System.Drawing.Point(-2, 440);
-            this.pnBt_Dashboard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBt_Dashboard.Location = new System.Drawing.Point(-1, 286);
+            this.pnBt_Dashboard.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnBt_Dashboard.Name = "pnBt_Dashboard";
-            this.pnBt_Dashboard.Size = new System.Drawing.Size(8, 76);
+            this.pnBt_Dashboard.Size = new System.Drawing.Size(5, 49);
             this.pnBt_Dashboard.TabIndex = 11;
             this.pnBt_Dashboard.Visible = false;
             // 
             // pnBt_Movie
             // 
             this.pnBt_Movie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.pnBt_Movie.Location = new System.Drawing.Point(-2, 356);
-            this.pnBt_Movie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBt_Movie.Location = new System.Drawing.Point(-1, 231);
+            this.pnBt_Movie.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnBt_Movie.Name = "pnBt_Movie";
-            this.pnBt_Movie.Size = new System.Drawing.Size(8, 76);
+            this.pnBt_Movie.Size = new System.Drawing.Size(5, 49);
             this.pnBt_Movie.TabIndex = 10;
             this.pnBt_Movie.Visible = false;
             // 
@@ -129,10 +129,10 @@ namespace DBMS_project
             this.bt_Bill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Bill.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Bill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.bt_Bill.Location = new System.Drawing.Point(0, 608);
-            this.bt_Bill.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_Bill.Location = new System.Drawing.Point(0, 395);
+            this.bt_Bill.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bt_Bill.Name = "bt_Bill";
-            this.bt_Bill.Size = new System.Drawing.Size(268, 76);
+            this.bt_Bill.Size = new System.Drawing.Size(179, 49);
             this.bt_Bill.TabIndex = 9;
             this.bt_Bill.Text = "Bill";
             this.bt_Bill.UseVisualStyleBackColor = false;
@@ -146,10 +146,10 @@ namespace DBMS_project
             this.bt_Booking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Booking.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Booking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.bt_Booking.Location = new System.Drawing.Point(-4, 524);
-            this.bt_Booking.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_Booking.Location = new System.Drawing.Point(-3, 341);
+            this.bt_Booking.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bt_Booking.Name = "bt_Booking";
-            this.bt_Booking.Size = new System.Drawing.Size(268, 76);
+            this.bt_Booking.Size = new System.Drawing.Size(179, 49);
             this.bt_Booking.TabIndex = 7;
             this.bt_Booking.Text = "Booking";
             this.bt_Booking.UseVisualStyleBackColor = false;
@@ -163,10 +163,10 @@ namespace DBMS_project
             this.btDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btDashboard.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btDashboard.Location = new System.Drawing.Point(-1, 440);
-            this.btDashboard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btDashboard.Location = new System.Drawing.Point(-1, 286);
+            this.btDashboard.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btDashboard.Name = "btDashboard";
-            this.btDashboard.Size = new System.Drawing.Size(268, 76);
+            this.btDashboard.Size = new System.Drawing.Size(179, 49);
             this.btDashboard.TabIndex = 5;
             this.btDashboard.Text = "Dashboard";
             this.btDashboard.UseVisualStyleBackColor = false;
@@ -180,10 +180,10 @@ namespace DBMS_project
             this.bt_Movie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Movie.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Movie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.bt_Movie.Location = new System.Drawing.Point(0, 356);
-            this.bt_Movie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.bt_Movie.Location = new System.Drawing.Point(0, 231);
+            this.bt_Movie.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.bt_Movie.Name = "bt_Movie";
-            this.bt_Movie.Size = new System.Drawing.Size(264, 76);
+            this.bt_Movie.Size = new System.Drawing.Size(176, 49);
             this.bt_Movie.TabIndex = 3;
             this.bt_Movie.Text = "Movie";
             this.bt_Movie.UseVisualStyleBackColor = false;
@@ -192,10 +192,10 @@ namespace DBMS_project
             // pnBt_Employee
             // 
             this.pnBt_Employee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            this.pnBt_Employee.Location = new System.Drawing.Point(-2, 272);
-            this.pnBt_Employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnBt_Employee.Location = new System.Drawing.Point(-1, 177);
+            this.pnBt_Employee.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pnBt_Employee.Name = "pnBt_Employee";
-            this.pnBt_Employee.Size = new System.Drawing.Size(8, 76);
+            this.pnBt_Employee.Size = new System.Drawing.Size(5, 49);
             this.pnBt_Employee.TabIndex = 2;
             this.pnBt_Employee.Visible = false;
             // 
@@ -207,10 +207,10 @@ namespace DBMS_project
             this.btEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEmployee.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btEmployee.Location = new System.Drawing.Point(0, 272);
-            this.btEmployee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btEmployee.Location = new System.Drawing.Point(0, 177);
+            this.btEmployee.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btEmployee.Name = "btEmployee";
-            this.btEmployee.Size = new System.Drawing.Size(263, 76);
+            this.btEmployee.Size = new System.Drawing.Size(175, 49);
             this.btEmployee.TabIndex = 1;
             this.btEmployee.Text = "Employee";
             this.btEmployee.UseVisualStyleBackColor = false;
@@ -223,8 +223,9 @@ namespace DBMS_project
             this.label_Dashboard.Font = new System.Drawing.Font("Segoe Print", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Dashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.label_Dashboard.Location = new System.Drawing.Point(0, 0);
+            this.label_Dashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Dashboard.Name = "label_Dashboard";
-            this.label_Dashboard.Size = new System.Drawing.Size(267, 166);
+            this.label_Dashboard.Size = new System.Drawing.Size(178, 109);
             this.label_Dashboard.TabIndex = 0;
             this.label_Dashboard.Text = "DASHBOARD";
             this.label_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,50 +234,50 @@ namespace DBMS_project
             // panel_Top
             // 
             this.panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Top.Location = new System.Drawing.Point(269, 0);
-            this.panel_Top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_Top.Location = new System.Drawing.Point(180, 0);
+            this.panel_Top.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(1339, 118);
+            this.panel_Top.Size = new System.Drawing.Size(728, 77);
             this.panel_Top.TabIndex = 1;
             // 
             // chart_Movie
             // 
             this.chart_Movie.BackColor = System.Drawing.SystemColors.Window;
-            chartArea3.Name = "ChartArea1";
-            this.chart_Movie.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart_Movie.Legends.Add(legend3);
-            this.chart_Movie.Location = new System.Drawing.Point(1141, 284);
-            this.chart_Movie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            chartArea1.Name = "ChartArea1";
+            this.chart_Movie.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart_Movie.Legends.Add(legend1);
+            this.chart_Movie.Location = new System.Drawing.Point(761, 185);
+            this.chart_Movie.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart_Movie.Name = "chart_Movie";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart_Movie.Series.Add(series3);
-            this.chart_Movie.Size = new System.Drawing.Size(421, 640);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart_Movie.Series.Add(series1);
+            this.chart_Movie.Size = new System.Drawing.Size(281, 416);
             this.chart_Movie.TabIndex = 7;
             this.chart_Movie.Text = "chart1";
             // 
             // chart_Revenue
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart_Revenue.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart_Revenue.Legends.Add(legend4);
-            this.chart_Revenue.Location = new System.Drawing.Point(290, 284);
-            this.chart_Revenue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            chartArea2.Name = "ChartArea1";
+            this.chart_Revenue.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart_Revenue.Legends.Add(legend2);
+            this.chart_Revenue.Location = new System.Drawing.Point(193, 185);
+            this.chart_Revenue.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.chart_Revenue.Name = "chart_Revenue";
             this.chart_Revenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series4.ChartArea = "ChartArea1";
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
-            series4.ShadowOffset = 4;
-            this.chart_Revenue.Series.Add(series4);
-            this.chart_Revenue.Size = new System.Drawing.Size(828, 640);
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
+            series2.ShadowOffset = 4;
+            this.chart_Revenue.Series.Add(series2);
+            this.chart_Revenue.Size = new System.Drawing.Size(552, 416);
             this.chart_Revenue.TabIndex = 6;
             this.chart_Revenue.Text = "Revenue";
             // 
@@ -286,10 +287,10 @@ namespace DBMS_project
             this.panel_Report.Controls.Add(this.button_CreateRP);
             this.panel_Report.Controls.Add(this.label_RPDB);
             this.panel_Report.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Report.Location = new System.Drawing.Point(269, 118);
-            this.panel_Report.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_Report.Location = new System.Drawing.Point(180, 77);
+            this.panel_Report.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel_Report.Name = "panel_Report";
-            this.panel_Report.Size = new System.Drawing.Size(1339, 248);
+            this.panel_Report.Size = new System.Drawing.Size(728, 161);
             this.panel_Report.TabIndex = 5;
             // 
             // button_CreateRP
@@ -297,10 +298,10 @@ namespace DBMS_project
             this.button_CreateRP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.button_CreateRP.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_CreateRP.ForeColor = System.Drawing.Color.DarkGray;
-            this.button_CreateRP.Location = new System.Drawing.Point(1024, 24);
-            this.button_CreateRP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button_CreateRP.Location = new System.Drawing.Point(683, 16);
+            this.button_CreateRP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button_CreateRP.Name = "button_CreateRP";
-            this.button_CreateRP.Size = new System.Drawing.Size(234, 81);
+            this.button_CreateRP.Size = new System.Drawing.Size(156, 53);
             this.button_CreateRP.TabIndex = 1;
             this.button_CreateRP.Text = "Create report";
             this.button_CreateRP.UseVisualStyleBackColor = false;
@@ -308,19 +309,20 @@ namespace DBMS_project
             // label_RPDB
             // 
             this.label_RPDB.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_RPDB.Location = new System.Drawing.Point(26, 24);
+            this.label_RPDB.Location = new System.Drawing.Point(17, 16);
+            this.label_RPDB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_RPDB.Name = "label_RPDB";
-            this.label_RPDB.Size = new System.Drawing.Size(233, 55);
+            this.label_RPDB.Size = new System.Drawing.Size(155, 36);
             this.label_RPDB.TabIndex = 0;
             this.label_RPDB.Text = "Dashboard";
             this.label_RPDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1608, 990);
+            this.ClientSize = new System.Drawing.Size(908, 482);
             this.Controls.Add(this.chart_Movie);
             this.Controls.Add(this.chart_Revenue);
             this.Controls.Add(this.panel_Report);
@@ -328,7 +330,7 @@ namespace DBMS_project
             this.Controls.Add(this.panel_RightDB);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dashboard";

@@ -18,72 +18,43 @@ namespace DBMS_project
             InitializeComponent();
         }
 
-        private void textBox_ID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        public static int permission = 1;
         private void Form_Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        bool checkacc() //Hàm check username và password, nếu return true thì username và password đúng, và ngược lại.
-        {
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=NP119411\SQLEXPRESS;Initial Catalog=quanlirapphim;Integrated Security=True"; //Kết nối server SQL, muốn chạy thử bên máy mày phải đổi đường dẫn server
-            cnn = new SqlConnection(connetionString);
-            string cmdstring = string.Format("select username, password from Account where username = '{0}' and password = '{1}'", tk.Text, textBox_Password.Text); //lấy username và password từ SQL
-            SqlCommand cmd = new SqlCommand(cmdstring, cnn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            cnn.Open();
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            cnn.Close();
-            if (dt.Rows.Count > 0)
-            {
-                return true;    // Hàm trả về
-            }
-            else
-                return false;       // Hàm trả về
-        }
-
-        private int checkquyen()
-        {
-            int k;
-            if (tk.Text[0] == 'm')
-                k = 0;
-            else if (tk.Text[0] == 'e')
-                k = 1;
-            else k = 2;
-            return k;
-        }
-
-
         private void button_Summit_Click(object sender, EventArgs e)
         {
-            if (checkacc() == true)
+            if (BUS.Instance.Login(tbx_userName, tbx_Password))
             {
-                if (checkquyen() == 0)
+                if (rbtn_Manager.Checked)
                 {
-                    Dashboard frm = new Dashboard();
+                    Form_Employee frm = new Form_Employee();
+                    frm.Show();
                     this.Hide();
-                    frm.ShowDialog();
-                    this.Show();
                 }
-                else if (checkquyen() == 1)
+                else if (rbtn_Employee.Checked)
                 {
-                    EDashboard arm = new EDashboard();
+                    Form_Booking frm = new Form_Booking();
+                    frm.Show();
                     this.Hide();
-                    arm.ShowDialog();
-                    this.Show();
                 }
-                else MessageBox.Show("Tài khoản không có quyền!", "Thông Báo");
+                else MessageBox.Show("Tài khoản không có quyền!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại!", "Thông Báo");
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void rbtn_Manager_CheckedChanged(object sender, EventArgs e)
+        {
+            permission = 1;
+        }
+
+        private void rbtn_Employee_CheckedChanged(object sender, EventArgs e)
+        {
+            permission = 2;
         }
     }
 }

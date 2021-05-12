@@ -17,9 +17,25 @@ namespace DBMS_project
             InitializeComponent();
         }
 
-        private void label_CustomerName_Click(object sender, EventArgs e)
+        private void textBox_EmpID_KeyDown(object sender, KeyEventArgs e)
         {
-
+            try
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    if (textBox_EmpID.Text != "")
+                    {
+                        textBox_EmpName.Text = BUS.Instance.GetEmployeeName(textBox_EmpID.Text);
+                    }
+                }
+                else textBox_EmpName.Text = "";
+            }
+            catch (Exception ex)
+            {
+                textBox_EmpName.Text = "";
+                ex = new Exception("ID không tồn tại");
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

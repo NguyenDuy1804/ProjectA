@@ -45,9 +45,10 @@ namespace DBMS_project
             this.label_Title.AutoSize = true;
             this.label_Title.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label_Title.Location = new System.Drawing.Point(156, 25);
+            this.label_Title.Location = new System.Drawing.Point(117, 20);
+            this.label_Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Title.Name = "label_Title";
-            this.label_Title.Size = new System.Drawing.Size(125, 54);
+            this.label_Title.Size = new System.Drawing.Size(101, 43);
             this.label_Title.TabIndex = 0;
             this.label_Title.Text = "Invoice";
             this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,12 +58,12 @@ namespace DBMS_project
             this.label_CustomerName.AutoSize = true;
             this.label_CustomerName.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_CustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label_CustomerName.Location = new System.Drawing.Point(3, 167);
+            this.label_CustomerName.Location = new System.Drawing.Point(2, 136);
+            this.label_CustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_CustomerName.Name = "label_CustomerName";
-            this.label_CustomerName.Size = new System.Drawing.Size(164, 30);
+            this.label_CustomerName.Size = new System.Drawing.Size(134, 24);
             this.label_CustomerName.TabIndex = 1;
             this.label_CustomerName.Text = "Customer Name: ";
-            this.label_CustomerName.Click += new System.EventHandler(this.label_CustomerName_Click);
             // 
             // textBox_CusName
             // 
@@ -70,11 +71,11 @@ namespace DBMS_project
             this.textBox_CusName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_CusName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_CusName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.textBox_CusName.Location = new System.Drawing.Point(173, 167);
+            this.textBox_CusName.Location = new System.Drawing.Point(130, 136);
+            this.textBox_CusName.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_CusName.Name = "textBox_CusName";
-            this.textBox_CusName.Size = new System.Drawing.Size(235, 23);
+            this.textBox_CusName.Size = new System.Drawing.Size(176, 19);
             this.textBox_CusName.TabIndex = 2;
-            this.textBox_CusName.Text = "Nguyen Le Duy";
             this.textBox_CusName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label_CusID
@@ -82,9 +83,10 @@ namespace DBMS_project
             this.label_CusID.AutoSize = true;
             this.label_CusID.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_CusID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label_CusID.Location = new System.Drawing.Point(3, 104);
+            this.label_CusID.Location = new System.Drawing.Point(2, 84);
+            this.label_CusID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_CusID.Name = "label_CusID";
-            this.label_CusID.Size = new System.Drawing.Size(133, 30);
+            this.label_CusID.Size = new System.Drawing.Size(109, 24);
             this.label_CusID.TabIndex = 3;
             this.label_CusID.Text = "Customer ID: ";
             // 
@@ -94,11 +96,11 @@ namespace DBMS_project
             this.textBox_CusID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_CusID.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_CusID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.textBox_CusID.Location = new System.Drawing.Point(173, 111);
+            this.textBox_CusID.Location = new System.Drawing.Point(130, 90);
+            this.textBox_CusID.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_CusID.Name = "textBox_CusID";
-            this.textBox_CusID.Size = new System.Drawing.Size(235, 23);
+            this.textBox_CusID.Size = new System.Drawing.Size(176, 19);
             this.textBox_CusID.TabIndex = 4;
-            this.textBox_CusID.Text = "19110110";
             this.textBox_CusID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label_EmpID
@@ -106,9 +108,10 @@ namespace DBMS_project
             this.label_EmpID.AutoSize = true;
             this.label_EmpID.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_EmpID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label_EmpID.Location = new System.Drawing.Point(3, 223);
+            this.label_EmpID.Location = new System.Drawing.Point(2, 181);
+            this.label_EmpID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_EmpID.Name = "label_EmpID";
-            this.label_EmpID.Size = new System.Drawing.Size(134, 30);
+            this.label_EmpID.Size = new System.Drawing.Size(108, 24);
             this.label_EmpID.TabIndex = 5;
             this.label_EmpID.Text = "Employee ID: ";
             // 
@@ -118,21 +121,23 @@ namespace DBMS_project
             this.textBox_EmpID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_EmpID.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_EmpID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.textBox_EmpID.Location = new System.Drawing.Point(173, 227);
+            this.textBox_EmpID.Location = new System.Drawing.Point(130, 184);
+            this.textBox_EmpID.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_EmpID.Name = "textBox_EmpID";
-            this.textBox_EmpID.Size = new System.Drawing.Size(235, 23);
+            this.textBox_EmpID.Size = new System.Drawing.Size(176, 19);
             this.textBox_EmpID.TabIndex = 6;
-            this.textBox_EmpID.Text = "01256PT";
             this.textBox_EmpID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EmpID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_EmpID_KeyDown);
             // 
             // label_EmpName
             // 
             this.label_EmpName.AutoSize = true;
             this.label_EmpName.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_EmpName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label_EmpName.Location = new System.Drawing.Point(3, 279);
+            this.label_EmpName.Location = new System.Drawing.Point(2, 227);
+            this.label_EmpName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_EmpName.Name = "label_EmpName";
-            this.label_EmpName.Size = new System.Drawing.Size(165, 30);
+            this.label_EmpName.Size = new System.Drawing.Size(133, 24);
             this.label_EmpName.TabIndex = 7;
             this.label_EmpName.Text = "Employee Name: ";
             // 
@@ -142,19 +147,19 @@ namespace DBMS_project
             this.textBox_EmpName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox_EmpName.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_EmpName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.textBox_EmpName.Location = new System.Drawing.Point(173, 286);
+            this.textBox_EmpName.Location = new System.Drawing.Point(130, 232);
+            this.textBox_EmpName.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_EmpName.Name = "textBox_EmpName";
-            this.textBox_EmpName.Size = new System.Drawing.Size(235, 23);
+            this.textBox_EmpName.Size = new System.Drawing.Size(176, 19);
             this.textBox_EmpName.TabIndex = 8;
-            this.textBox_EmpName.Text = "Dang Van Thong";
             this.textBox_EmpName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form_Bill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.ClientSize = new System.Drawing.Size(457, 661);
+            this.ClientSize = new System.Drawing.Size(343, 537);
             this.Controls.Add(this.textBox_EmpName);
             this.Controls.Add(this.label_EmpName);
             this.Controls.Add(this.textBox_EmpID);
@@ -164,6 +169,7 @@ namespace DBMS_project
             this.Controls.Add(this.textBox_CusName);
             this.Controls.Add(this.label_CustomerName);
             this.Controls.Add(this.label_Title);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Bill";
             this.Text = "Form_Bill";
             this.ResumeLayout(false);

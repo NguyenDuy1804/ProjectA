@@ -29,14 +29,50 @@ namespace DBMS_project
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel_top_login = new System.Windows.Forms.Panel();
-            this.label_Login = new System.Windows.Forms.Label();
-            this.tk = new System.Windows.Forms.TextBox();
-            this.textBox_Password = new System.Windows.Forms.TextBox();
             this.button_Summit = new System.Windows.Forms.Button();
-            this.button_Register = new System.Windows.Forms.Button();
+            this.tbx_Password = new System.Windows.Forms.TextBox();
+            this.label_Login = new System.Windows.Forms.Label();
+            this.panel_top_login = new System.Windows.Forms.Panel();
+            this.tbx_userName = new System.Windows.Forms.TextBox();
+            this.lb_userName = new System.Windows.Forms.Label();
+            this.lb_Password = new System.Windows.Forms.Label();
+            this.rbtn_Employee = new System.Windows.Forms.RadioButton();
+            this.rbtn_Manager = new System.Windows.Forms.RadioButton();
             this.panel_top_login.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // button_Summit
+            // 
+            this.button_Summit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.button_Summit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Summit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(177)))), ((int)(((byte)(176)))));
+            this.button_Summit.Location = new System.Drawing.Point(25, 336);
+            this.button_Summit.Name = "button_Summit";
+            this.button_Summit.Size = new System.Drawing.Size(292, 41);
+            this.button_Summit.TabIndex = 3;
+            this.button_Summit.Text = "Login";
+            this.button_Summit.UseVisualStyleBackColor = false;
+            this.button_Summit.Click += new System.EventHandler(this.button_Summit_Click);
+            // 
+            // tbx_Password
+            // 
+            this.tbx_Password.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_Password.Location = new System.Drawing.Point(25, 218);
+            this.tbx_Password.Name = "tbx_Password";
+            this.tbx_Password.Size = new System.Drawing.Size(293, 39);
+            this.tbx_Password.TabIndex = 2;
+            this.tbx_Password.UseSystemPasswordChar = true;
+            // 
+            // label_Login
+            // 
+            this.label_Login.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(242)))), ((int)(((byte)(254)))));
+            this.label_Login.Location = new System.Drawing.Point(25, 7);
+            this.label_Login.Name = "label_Login";
+            this.label_Login.Size = new System.Drawing.Size(292, 60);
+            this.label_Login.TabIndex = 0;
+            this.label_Login.Text = "LOGIN";
+            this.label_Login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_top_login
             // 
@@ -44,84 +80,84 @@ namespace DBMS_project
             this.panel_top_login.Controls.Add(this.label_Login);
             this.panel_top_login.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top_login.Location = new System.Drawing.Point(0, 0);
-            this.panel_top_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_top_login.Name = "panel_top_login";
-            this.panel_top_login.Size = new System.Drawing.Size(518, 120);
+            this.panel_top_login.Size = new System.Drawing.Size(345, 80);
             this.panel_top_login.TabIndex = 0;
             // 
-            // label_Login
+            // tbx_userName
             // 
-            this.label_Login.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(242)))), ((int)(((byte)(254)))));
-            this.label_Login.Location = new System.Drawing.Point(38, 10);
-            this.label_Login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Login.Name = "label_Login";
-            this.label_Login.Size = new System.Drawing.Size(438, 90);
-            this.label_Login.TabIndex = 0;
-            this.label_Login.Text = "LOGIN";
-            this.label_Login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tbx_userName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_userName.Location = new System.Drawing.Point(25, 137);
+            this.tbx_userName.Name = "tbx_userName";
+            this.tbx_userName.Size = new System.Drawing.Size(293, 39);
+            this.tbx_userName.TabIndex = 1;
             // 
-            // tk
+            // lb_userName
             // 
-            this.tk.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tk.Location = new System.Drawing.Point(38, 176);
-            this.tk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tk.Name = "tk";
-            this.tk.Size = new System.Drawing.Size(438, 77);
-            this.tk.TabIndex = 1;
-            this.tk.TextChanged += new System.EventHandler(this.textBox_ID_TextChanged);
+            this.lb_userName.AutoSize = true;
+            this.lb_userName.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lb_userName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.lb_userName.Location = new System.Drawing.Point(21, 114);
+            this.lb_userName.Name = "lb_userName";
+            this.lb_userName.Size = new System.Drawing.Size(80, 20);
+            this.lb_userName.TabIndex = 10;
+            this.lb_userName.Text = "Username";
             // 
-            // textBox_Password
+            // lb_Password
             // 
-            this.textBox_Password.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Password.Location = new System.Drawing.Point(38, 296);
-            this.textBox_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox_Password.Name = "textBox_Password";
-            this.textBox_Password.Size = new System.Drawing.Size(438, 77);
-            this.textBox_Password.TabIndex = 2;
-            this.textBox_Password.UseSystemPasswordChar = true;
+            this.lb_Password.AutoSize = true;
+            this.lb_Password.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lb_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.lb_Password.Location = new System.Drawing.Point(21, 195);
+            this.lb_Password.Name = "lb_Password";
+            this.lb_Password.Size = new System.Drawing.Size(76, 20);
+            this.lb_Password.TabIndex = 11;
+            this.lb_Password.Text = "Password";
             // 
-            // button_Summit
+            // rbtn_Employee
             // 
-            this.button_Summit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.button_Summit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Summit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(177)))), ((int)(((byte)(176)))));
-            this.button_Summit.Location = new System.Drawing.Point(38, 418);
-            this.button_Summit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button_Summit.Name = "button_Summit";
-            this.button_Summit.Size = new System.Drawing.Size(438, 62);
-            this.button_Summit.TabIndex = 3;
-            this.button_Summit.Text = "Summit";
-            this.button_Summit.UseVisualStyleBackColor = false;
-            this.button_Summit.Click += new System.EventHandler(this.button_Summit_Click);
+            this.rbtn_Employee.AutoSize = true;
+            this.rbtn_Employee.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.rbtn_Employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.rbtn_Employee.Location = new System.Drawing.Point(222, 286);
+            this.rbtn_Employee.Name = "rbtn_Employee";
+            this.rbtn_Employee.Size = new System.Drawing.Size(95, 24);
+            this.rbtn_Employee.TabIndex = 12;
+            this.rbtn_Employee.Text = "Employee";
+            this.rbtn_Employee.UseVisualStyleBackColor = true;
+            this.rbtn_Employee.CheckedChanged += new System.EventHandler(this.rbtn_Employee_CheckedChanged);
             // 
-            // button_Register
+            // rbtn_Manager
             // 
-            this.button_Register.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(193)))), ((int)(((byte)(243)))));
-            this.button_Register.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.button_Register.Location = new System.Drawing.Point(38, 520);
-            this.button_Register.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button_Register.Name = "button_Register";
-            this.button_Register.Size = new System.Drawing.Size(438, 62);
-            this.button_Register.TabIndex = 4;
-            this.button_Register.Text = "Register";
-            this.button_Register.UseVisualStyleBackColor = false;
+            this.rbtn_Manager.AutoSize = true;
+            this.rbtn_Manager.Checked = true;
+            this.rbtn_Manager.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.rbtn_Manager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.rbtn_Manager.Location = new System.Drawing.Point(25, 286);
+            this.rbtn_Manager.Name = "rbtn_Manager";
+            this.rbtn_Manager.Size = new System.Drawing.Size(89, 24);
+            this.rbtn_Manager.TabIndex = 13;
+            this.rbtn_Manager.TabStop = true;
+            this.rbtn_Manager.Text = "Manager";
+            this.rbtn_Manager.UseVisualStyleBackColor = true;
+            this.rbtn_Manager.CheckedChanged += new System.EventHandler(this.rbtn_Manager_CheckedChanged);
             // 
             // Form_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(518, 652);
-            this.Controls.Add(this.button_Register);
+            this.ClientSize = new System.Drawing.Size(345, 435);
+            this.Controls.Add(this.rbtn_Employee);
+            this.Controls.Add(this.rbtn_Manager);
+            this.Controls.Add(this.lb_Password);
+            this.Controls.Add(this.lb_userName);
             this.Controls.Add(this.button_Summit);
-            this.Controls.Add(this.textBox_Password);
-            this.Controls.Add(this.tk);
+            this.Controls.Add(this.tbx_Password);
+            this.Controls.Add(this.tbx_userName);
             this.Controls.Add(this.panel_top_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
@@ -133,13 +169,15 @@ namespace DBMS_project
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel_top_login;
-        private System.Windows.Forms.TextBox tk;
-        private System.Windows.Forms.TextBox textBox_Password;
         private System.Windows.Forms.Button button_Summit;
-        private System.Windows.Forms.Button button_Register;
+        private System.Windows.Forms.TextBox tbx_Password;
         private System.Windows.Forms.Label label_Login;
+        private System.Windows.Forms.Panel panel_top_login;
+        private System.Windows.Forms.TextBox tbx_userName;
+        private System.Windows.Forms.Label lb_userName;
+        private System.Windows.Forms.Label lb_Password;
+        private System.Windows.Forms.RadioButton rbtn_Employee;
+        private System.Windows.Forms.RadioButton rbtn_Manager;
     }
 }
 

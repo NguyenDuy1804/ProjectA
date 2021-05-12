@@ -12,19 +12,11 @@ namespace DBMS_project
 {
     public partial class Form_Booking : Form
     {
+        private Graphics g;
         public Form_Booking()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox_Avata_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_Room1_Click(object sender, EventArgs e)
-        {
-            
+            g = pnl_seatMap.CreateGraphics();
         }
 
         private void button_Room1_MouseHover(object sender, EventArgs e)
@@ -32,9 +24,19 @@ namespace DBMS_project
             button_Room1.ForeColor = Color.White;
         }
 
-        private void panel_Fill_Paint(object sender, PaintEventArgs e)
+        private void btn_booking_Click(object sender, EventArgs e)
         {
+            new Form_Bill().Show();
+        }
 
+        private void pnl_seatMap_Paint(object sender, PaintEventArgs e)
+        {
+            BUS.Instance.CreateMap(g);
+        }
+
+        private void pnl_seatMap_MouseClick(object sender, MouseEventArgs e)
+        {
+            BUS.Instance.Booking(e.X, e.Y, g);
         }
     }
 }

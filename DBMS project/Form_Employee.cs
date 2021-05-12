@@ -16,5 +16,22 @@ namespace DBMS_project
         {
             InitializeComponent();
         }
+
+        private void button_CreateRP_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Word Documents (*.doc)|*.doc";
+            sfd.FileName = "";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                BUS.Instance.Export(Data_Employee, sfd.FileName);
+            }
+        }
+
+        private void Form_Employee_Load(object sender, EventArgs e)
+        {
+            BUS.Instance.Load(Data_Employee);
+        }
     }
 }
