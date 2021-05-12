@@ -3,6 +3,13 @@ CREATE DATABASE DBMS;
 go
 use DBMS;
 
+Create table ACCOUNT(
+_Username VARCHAR(50),
+_Password VARCHAR(50),
+_Permission INT,
+CONSTRAINT PK_Account PRIMARY KEY (_Username, _Permission)
+)
+
 Create table CASEWORK(
 
 	CaseType nvarchar(256) Primary key,
