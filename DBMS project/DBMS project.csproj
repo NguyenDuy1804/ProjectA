@@ -74,76 +74,68 @@
     <Compile Include="Code - 3 layers\BUS.cs" />
     <Compile Include="Code - 3 layers\DAO.cs" />
     <Compile Include="Code - 3 layers\DataProvider.cs" />
-    <Compile Include="Form\Dashboard.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Dashboard.cs">
     </Compile>
-    <Compile Include="Form\Dashboard.Designer.cs">
+    <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\EDashboard.cs">
-      <SubType>Form</SubType>
+    <Compile Include="EDashboard.cs">
     </Compile>
-    <Compile Include="Form\EDashboard.Designer.cs">
+    <Compile Include="EDashboard.Designer.cs">
       <DependentUpon>EDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form_Bill.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Form_Bill.cs">
     </Compile>
-    <Compile Include="Form\Form_Bill.Designer.cs">
+    <Compile Include="Form_Bill.Designer.cs">
       <DependentUpon>Form_Bill.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form_Booking.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Form_Booking.cs">
     </Compile>
-    <Compile Include="Form\Form_Booking.Designer.cs">
+    <Compile Include="Form_Booking.Designer.cs">
       <DependentUpon>Form_Booking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form_Employee.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Form_Employee.cs">
     </Compile>
-    <Compile Include="Form\Form_Employee.Designer.cs">
+    <Compile Include="Form_Employee.Designer.cs">
       <DependentUpon>Form_Employee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Form_Movie.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Form_Movie.cs">
     </Compile>
-    <Compile Include="Form\Form_Movie.Designer.cs">
+    <Compile Include="Form_Movie.Designer.cs">
       <DependentUpon>Form_Movie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Login.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Login.cs">
     </Compile>
-    <Compile Include="Form\Login.Designer.cs">
+    <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form\Register.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Register.cs">
     </Compile>
-    <Compile Include="Form\Register.Designer.cs">
+    <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Code - 3 layers\DTOSeat.cs" />
-    <EmbeddedResource Include="Form\Dashboard.resx">
+    <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\EDashboard.resx">
+    <EmbeddedResource Include="EDashboard.resx">
       <DependentUpon>EDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form_Bill.resx">
+    <EmbeddedResource Include="Form_Bill.resx">
       <DependentUpon>Form_Bill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form_Booking.resx">
+    <EmbeddedResource Include="Form_Booking.resx">
       <DependentUpon>Form_Booking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form_Employee.resx">
+    <EmbeddedResource Include="Form_Employee.resx">
       <DependentUpon>Form_Employee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Form_Movie.resx">
+    <EmbeddedResource Include="Form_Movie.resx">
       <DependentUpon>Form_Movie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Login.resx">
+    <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -155,7 +147,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form\Register.resx">
+    <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -184,6 +176,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Form\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
