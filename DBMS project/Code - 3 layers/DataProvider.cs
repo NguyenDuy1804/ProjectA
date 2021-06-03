@@ -25,7 +25,7 @@ namespace DBMS_project
         }
 
         private DataProvider() { }
-        string connectionString = @"Data Source=.\;Initial Catalog=DBMS;Integrated Security=True";
+        string connectionString = @"Data Source=DESKTOP-GV657V4;Initial Catalog=DBMS;Integrated Security=True";
 
 
         public DataTable ExecuteQuery(string query, object[] parameters = null)

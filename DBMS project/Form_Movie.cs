@@ -26,5 +26,10 @@ namespace DBMS_project
         {
 
         }
+
+        private void Form_Movie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

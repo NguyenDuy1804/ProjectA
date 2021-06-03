@@ -29,7 +29,7 @@ namespace DBMS_project
         #region Events
         public DataTable Login(string userName, int per)
         {
-            string query = "SELECT _Username, _Password FROM [dbo].[ACCOUNT] WHERE _Username = @userName AND _Permission = @per";
+            string query = "USP_check @userName , @per";
 
             object[] parameters = new object[] { userName, per };
 
@@ -38,8 +38,7 @@ namespace DBMS_project
 
         public DataTable Load()
         {
-            string query = "SELECT IDEmp AS ID, NameEmployee As 'Full Name', BirthDay AS 'Birth Day', Gender, Phone, Email," +
-                " JobPosition AS Position FROM[dbo].[EMPLOYEE]";
+            string query = "USP_getAllEmployee";
 
             //object[] parameters = new object[] { <List parameters> };
             return DataProvider.Instance.ExecuteQuery(query);
@@ -47,11 +46,19 @@ namespace DBMS_project
 
         public DataTable GetEmployeeName(string id)
         {
-            string query = "SELECT NameEmployee FROM[dbo].[EMPLOYEE] WHERE IDEmp = @id";
+            string query = "USP_checkEmployeeName  @id";
 
             object[] parameters = new object[] { id };
             return DataProvider.Instance.ExecuteQuery(query, parameters);
         }
         #endregion
+
+
+        public DataTable searchEmployeeByID(string id)
+        {
+            string query = "USP_searchEmployeeByID @id";
+            object[] parameter = new object[] { id };
+            return DataProvider.Instance.ExecuteQuery(query, parameter);
+        }
     }
 }

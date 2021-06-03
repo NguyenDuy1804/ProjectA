@@ -23,8 +23,32 @@ namespace DBMS_project
             pnBt_Dashboard.Visible = false;
             pnBt_Movie.Visible = false;
             pnBt_Booking.Visible = false;
-            pnBT_Bill.Visible = false;           
+            pnBT_Bill.Visible = false;
+            activeForm = loadFormIntoContentForm(activeForm, new Form_Employee(), panelContentLoad);
+            
+
         }
+        private Form activeForm = null;
+        #region load data panel into destination panel
+        public static Form loadFormIntoContentForm(Form activeForm, Form childForm, Panel isLoaded)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+
+            activeForm = childForm;
+
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            isLoaded.Controls.Add(childForm);
+            isLoaded.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            return childForm;
+        }
+        #endregion
 
         private void bt_Movie_Click(object sender, EventArgs e)
         {
@@ -68,6 +92,11 @@ namespace DBMS_project
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelContentLoad_Paint(object sender, PaintEventArgs e)
         {
 
         }

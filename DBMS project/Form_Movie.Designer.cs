@@ -31,9 +31,9 @@ namespace DBMS_project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Movie));
             this.pn_Slot1 = new System.Windows.Forms.Panel();
-            this.ptB_slot1 = new System.Windows.Forms.PictureBox();
-            this.lb_Slot1 = new System.Windows.Forms.Label();
             this.lb_TypeSlot1 = new System.Windows.Forms.Label();
+            this.lb_Slot1 = new System.Windows.Forms.Label();
+            this.ptB_slot1 = new System.Windows.Forms.PictureBox();
             this.PN_Slot2 = new System.Windows.Forms.Panel();
             this.lb_Type_slot2 = new System.Windows.Forms.Label();
             this.lb_Name_Slot2 = new System.Windows.Forms.Label();
@@ -93,17 +93,15 @@ namespace DBMS_project
             this.pn_Slot1.TabIndex = 0;
             this.pn_Slot1.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_Slot1_Paint);
             // 
-            // ptB_slot1
+            // lb_TypeSlot1
             // 
-            this.ptB_slot1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ptB_slot1.Image = ((System.Drawing.Image)(resources.GetObject("ptB_slot1.Image")));
-            this.ptB_slot1.Location = new System.Drawing.Point(0, 0);
-            this.ptB_slot1.Name = "ptB_slot1";
-            this.ptB_slot1.Size = new System.Drawing.Size(216, 219);
-            this.ptB_slot1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptB_slot1.TabIndex = 0;
-            this.ptB_slot1.TabStop = false;
-            this.ptB_slot1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lb_TypeSlot1.AutoSize = true;
+            this.lb_TypeSlot1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_TypeSlot1.Location = new System.Drawing.Point(20, 277);
+            this.lb_TypeSlot1.Name = "lb_TypeSlot1";
+            this.lb_TypeSlot1.Size = new System.Drawing.Size(99, 23);
+            this.lb_TypeSlot1.TabIndex = 2;
+            this.lb_TypeSlot1.Text = "Movie Type";
             // 
             // lb_Slot1
             // 
@@ -115,15 +113,17 @@ namespace DBMS_project
             this.lb_Slot1.TabIndex = 1;
             this.lb_Slot1.Text = "Movie Name";
             // 
-            // lb_TypeSlot1
+            // ptB_slot1
             // 
-            this.lb_TypeSlot1.AutoSize = true;
-            this.lb_TypeSlot1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_TypeSlot1.Location = new System.Drawing.Point(20, 277);
-            this.lb_TypeSlot1.Name = "lb_TypeSlot1";
-            this.lb_TypeSlot1.Size = new System.Drawing.Size(99, 23);
-            this.lb_TypeSlot1.TabIndex = 2;
-            this.lb_TypeSlot1.Text = "Movie Type";
+            this.ptB_slot1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ptB_slot1.Image = ((System.Drawing.Image)(resources.GetObject("ptB_slot1.Image")));
+            this.ptB_slot1.Location = new System.Drawing.Point(0, 0);
+            this.ptB_slot1.Name = "ptB_slot1";
+            this.ptB_slot1.Size = new System.Drawing.Size(216, 219);
+            this.ptB_slot1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptB_slot1.TabIndex = 0;
+            this.ptB_slot1.TabStop = false;
+            this.ptB_slot1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PN_Slot2
             // 
@@ -431,7 +431,7 @@ namespace DBMS_project
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1172, 744);
+            this.ClientSize = new System.Drawing.Size(1172, 741);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pn_Slot7);
             this.Controls.Add(this.pn_Slot6);
@@ -443,6 +443,7 @@ namespace DBMS_project
             this.Name = "Form_Movie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Movie";
+            this.Load += new System.EventHandler(this.Form_Movie_Load);
             this.pn_Slot1.ResumeLayout(false);
             this.pn_Slot1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptB_slot1)).EndInit();
