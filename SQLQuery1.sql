@@ -118,6 +118,8 @@ ROLLBACK TRAN
 END
 END
 ------ Function
+
+
 go
 CREATE FUNCTION computeTotalSalary()
 RETURNS TABLE 
@@ -148,10 +150,11 @@ RETURNS INT
 AS 
 BEGIN 
 DECLARE @TTC INT; 
-SELECT @TTC = COUNT(EMPLOYEE.IDEMP) FROM EMPLOYEE 
+SELECT @TTC = COUNT(EMPLOYEE.IDEmp) FROM EMPLOYEE 
 RETURN @TTC; 
 END
 ---
+
 go
 CREATE FUNCTION ttkh()
 RETURNS TABLE
@@ -160,12 +163,13 @@ RETURN SELECT * FROM CUSTOMER;
 
 
 
+select dbo.FN_TOTALEMPLOYEE()
+
+select *FROM dbo.ttkh()
 
 
 
-
-
-
+select dbo.Fn_TotalCustomer()
 
 
 
@@ -263,6 +267,24 @@ insert into TYPETICKET(TypeTicket,TypeTicketName,Price) values('DOUBLEA','couple
 
 
 ----- 
+
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(1,N'Trần Văn THiện',0,'2001-09-07','0987011752',900);
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(2,N'Nguyễn Ánh Tuyết',1,'2016-03-05','0164131233',700);
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(3,N'Lương Văn Hữu',1,'2002-08-03','01688050196',1200)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(4,N'Nguyễn Yến Nhi',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(5,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(6,N'Trần Văn THiện',1,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(7,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(8,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(9,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(10,N'Trần Văn THiện',1,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(11,N'Trần Văn THiện',1,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(12,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(13,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(14,N'Trần Văn THiện',1,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(15,N'Trần Văn THiện',1,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(16,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
+insert into CUSTOMER(IDCustomer,NameCus,Gender,BirthDay,Phone,TotalPrice) values(17,N'Trần Văn THiện',0,'2012-09-07','0987030344',600)
 
 
 

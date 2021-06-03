@@ -194,7 +194,9 @@ namespace DBMS_project
             // 
             // dataGridViewCustomer
             // 
-            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCustomer.AllowUserToAddRows = false;
+            this.dataGridViewCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCustomer.ColumnHeadersHeight = 29;
             this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 103);
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
