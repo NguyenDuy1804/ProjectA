@@ -57,6 +57,9 @@ namespace DBMS_project
             pnBt_Dashboard.Visible = false;            
             pnBt_Booking.Visible = false;
             pnBT_Bill.Visible = false;
+
+            activeForm = loadFormIntoContentForm(activeForm, new Form_Movie(), panelContentLoad);
+
         }
 
         private void btDashboard_Click(object sender, EventArgs e)
@@ -75,6 +78,7 @@ namespace DBMS_project
             pnBt_Movie.Visible = false;
             pnBt_Employee.Visible = false;            
             pnBT_Bill.Visible = false;
+            activeForm = loadFormIntoContentForm(activeForm, new Form_Booking(), panelContentLoad);
         }
 
         private void bt_Bill_Click(object sender, EventArgs e)
@@ -83,7 +87,8 @@ namespace DBMS_project
             pnBt_Booking.Visible = false;
             pnBt_Dashboard.Visible = false;
             pnBt_Movie.Visible = false;
-            pnBt_Employee.Visible = false;          
+            pnBt_Employee.Visible = false;
+            activeForm = loadFormIntoContentForm(activeForm, new Form_Bill(), panelContentLoad);
         }
 
         private void label_Dashboard_Click(object sender, EventArgs e)

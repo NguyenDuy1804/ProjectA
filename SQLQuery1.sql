@@ -54,7 +54,98 @@ as
 go
 
 
-drop proc USP_searchEmployeeByID
+-------------------
+CREATE TRIGGER tg_CheckAgeOfEmployee
+ON EMPLOYEE
+FOR INSERT ,UPDATE
+AS
+BEGIN
+declare @day int, @dateBirth datetime, @nowDate datetime, @age float
+SELECT @dateBirth = ise.BirthDay FROM inserted ise
+SELECT @nowDate=GETDATE();
+SELECT @day=DATEDIFF(dayofyear,@dateBirth,@nowDate);
+set @age=@day/365;
+if(@age<18)
+BEGIN
+print('Not enough age of employee (>18 year old)')
+ROLLBACK tran;
+return
+END
+END
+----------------------
+CREATE TRIGGER tg_checkTotalTimeShowTime
+ON SHOWTIME
+FOR INSERT, UPDATE
+AS
+BEGIN
+Declare @totalTime datetime,@timeOfMovie datetime
+SELECT @totalTime= DATEDIFF(hour,show.startTime,show.endTime) FROM SHOWTIME show
+select @timeOfMovie = TotalTime FROM MOVIESHOWTIME
+if(@totalTime < DATEPART(HOUR,@timeOfMovie))
+BEGIN
+print('edit again totaltime')
+rollback tran
+return
+END
+
+END
+---------------------------
+CREATE TRIGGER check_salary ON SALARY
+FOR INSERT, UPDATE
+AS
+BEGIN
+declare @totalSalary float;
+SELECT @totalSalary = inserted.TotalSalary FROM inserted;
+if(@totalSalary < 30000000)
+BEGIN
+print('totalSalary need > 3000000')
+ROLLBACK TRAN
+END
+ENd
+-------
+CREATE TRIGGER tg_room_free
+ON MOVIESHOWTIME
+FOR INSERT, UPDATE
+AS
+BEGIN 
+declare @idRoom nvarchar(256), @roomStatus bit
+select @idRoom = inserted.roomId FROM inserted
+select @roomStatus = Room.RoomStatus FROM ROOM
+if(@roomStatus = 1)
+BEGIn
+print('Already movie show time in this Rooom')
+ROLLBACK TRAN
+END
+END
+------ Function
+go
+CREATE FUNCTION computeTotalSalary()
+RETURNS TABLE 
+AS
+RETURN 
+SELECT SUM(DATEPART(hour,CheckOut-DATEPART(hour,CheckIn)) AS syn
+FROM WORK w JOIN EMPLOYEE e ON w.IDEmp=e.IDEmp
+GROUP BY e.IDEmp,DATEPART(mm,CheckOut)
+
+----------
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --go
 
