@@ -39,9 +39,10 @@ namespace DBMS_project
             this.label_EmpName = new System.Windows.Forms.Label();
             this.textBox_EmpName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
+            this.labelNumCus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.SuspendLayout();
@@ -157,6 +158,7 @@ namespace DBMS_project
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelNumCus);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dataGridViewCustomer);
@@ -166,16 +168,17 @@ namespace DBMS_project
             this.panel1.Size = new System.Drawing.Size(654, 741);
             this.panel1.TabIndex = 9;
             // 
-            // dataGridViewCustomer
+            // comboBox1
             // 
-            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 103);
-            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
-            this.dataGridViewCustomer.RowHeadersWidth = 51;
-            this.dataGridViewCustomer.RowTemplate.Height = 24;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(654, 638);
-            this.dataGridViewCustomer.TabIndex = 0;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.Info;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(519, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(114, 33);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.Text = "Newest";
             // 
             // label1
             // 
@@ -189,17 +192,27 @@ namespace DBMS_project
             this.label1.Text = "Customer List";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // dataGridViewCustomer
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(519, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 33);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "Newest";
+            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridViewCustomer.Location = new System.Drawing.Point(0, 103);
+            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
+            this.dataGridViewCustomer.RowHeadersWidth = 51;
+            this.dataGridViewCustomer.RowTemplate.Height = 24;
+            this.dataGridViewCustomer.Size = new System.Drawing.Size(654, 638);
+            this.dataGridViewCustomer.TabIndex = 0;
+            // 
+            // labelNumCus
+            // 
+            this.labelNumCus.AutoSize = true;
+            this.labelNumCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumCus.ForeColor = System.Drawing.Color.White;
+            this.labelNumCus.Location = new System.Drawing.Point(13, 50);
+            this.labelNumCus.Name = "labelNumCus";
+            this.labelNumCus.Size = new System.Drawing.Size(70, 29);
+            this.labelNumCus.TabIndex = 12;
+            this.labelNumCus.Text = "Num:";
             // 
             // Form_Bill
             // 
@@ -220,6 +233,7 @@ namespace DBMS_project
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_Bill";
             this.Text = "Form_Bill";
+            this.Load += new System.EventHandler(this.Form_Bill_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
@@ -243,5 +257,6 @@ namespace DBMS_project
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewCustomer;
+        private System.Windows.Forms.Label labelNumCus;
     }
 }

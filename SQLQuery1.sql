@@ -129,8 +129,35 @@ GROUP BY e.IDEmp,DATEPART(mm,CheckOut)
 
 ----------
 
+go
+CREATE FUNCTION Fn_TotalCustomer() 
+RETURNS INT
+AS 
+BEGIN 
+DECLARE @ttc int; 
+SELECT @ttc = COUNT(CUSTOMER.IDCustomer) FROM CUSTOMER 
+RETURN @ttc;
+END
+
+
 
 ---
+go
+CREATE FUNCTION FN_TOTALEMPLOYEE() 
+RETURNS INT 
+AS 
+BEGIN 
+DECLARE @TTC INT; 
+SELECT @TTC = COUNT(EMPLOYEE.IDEMP) FROM EMPLOYEE 
+RETURN @TTC; 
+END
+---
+go
+CREATE FUNCTION ttkh()
+RETURNS TABLE
+AS
+RETURN SELECT * FROM CUSTOMER;
+
 
 
 
@@ -235,6 +262,7 @@ insert into TYPETICKET(TypeTicket,TypeTicketName,Price) values('DOUBLEA','couple
 
 
 
------
+----- 
+
 
 

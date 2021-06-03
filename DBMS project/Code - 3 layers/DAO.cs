@@ -60,5 +60,23 @@ namespace DBMS_project
             object[] parameter = new object[] { id };
             return DataProvider.Instance.ExecuteQuery(query, parameter);
         }
+        public DataTable GetValuesCountEmployee()
+        {
+            string query = "select dbo.FN_TOTALEMPLOYEE()";
+            return DataProvider.Instance.ExecuteQuery(query);
+            
+        }
+
+
+        public DataTable GetValuesCountCustomer()
+        {
+            string query = "select dbo.Fn_TotalCustomer()";
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
+        public DataTable getAllCustomer()
+        {
+            string query = "select* FROM dbo.ttkh()";
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }

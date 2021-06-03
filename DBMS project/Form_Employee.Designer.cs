@@ -37,6 +37,7 @@ namespace DBMS_project
             this.lb_Employee = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.labelEmployee = new System.Windows.Forms.Label();
             this.pn_Data.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -47,6 +48,7 @@ namespace DBMS_project
             // 
             this.pn_Data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(197)))), ((int)(((byte)(177)))));
             this.pn_Data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_Data.Controls.Add(this.labelEmployee);
             this.pn_Data.Controls.Add(this.panel2);
             this.pn_Data.Controls.Add(this.button_CreateRP);
             this.pn_Data.Controls.Add(this.lb_Employee);
@@ -133,6 +135,16 @@ namespace DBMS_project
             this.dataGridView1.Size = new System.Drawing.Size(1065, 535);
             this.dataGridView1.TabIndex = 0;
             // 
+            // labelEmployee
+            // 
+            this.labelEmployee.AutoSize = true;
+            this.labelEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmployee.Location = new System.Drawing.Point(63, 70);
+            this.labelEmployee.Name = "labelEmployee";
+            this.labelEmployee.Size = new System.Drawing.Size(141, 25);
+            this.labelEmployee.TabIndex = 4;
+            this.labelEmployee.Text = "N .Employee:";
+            // 
             // Form_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,6 +157,7 @@ namespace DBMS_project
             this.Text = "Form_Employee";
             this.Load += new System.EventHandler(this.Form_Employee_Load);
             this.pn_Data.ResumeLayout(false);
+            this.pn_Data.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -162,5 +175,6 @@ namespace DBMS_project
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Label labelEmployee;
     }
 }
